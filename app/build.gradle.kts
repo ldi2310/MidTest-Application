@@ -42,9 +42,6 @@ android {
 
 dependencies {
 
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.lifecycle.runtime.ktx)
-    implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
@@ -81,4 +78,10 @@ dependencies {
 
     // Debugging & Compose Tooling (tùy chọn)
     debugImplementation("androidx.compose.ui:ui-tooling:1.6.1")
+
+    implementation("androidx.room:room-runtime:2.6.1")
+    kapt("androidx.room:room-compiler:2.6.1")
+
+    implementation("androidx.compose.ui:ui:1.4.0")
+
 }
